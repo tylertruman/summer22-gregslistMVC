@@ -1,6 +1,7 @@
 import { ProxyState } from "../AppState.js";
 import { carsService } from "../Services/CarsService.js";
 import { loadState, saveState } from "../Utils/LocalStorage.js";
+import { CarFormTemplate } from "../../forms.js";
 
 
 
@@ -30,6 +31,7 @@ export class CarsController{
 
   viewCars(){
     _drawCars()
+    document.getElementById('form').innerHTML = CarFormTemplate()
   }
 
   createCar(){

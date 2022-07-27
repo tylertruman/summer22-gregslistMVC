@@ -27,7 +27,7 @@ export class Car{
       <div class="bg-white elevation-2">
         <img class="img-fluid" src="${this.img}" alt="">
         <div class="p-2">
-          <h4 class="text-center">${this.make} | ${this.model} | ${this.year}</h4>
+          <h4 class="text-center">${this.make} <br> ${this.model} <br> ${this.year}</h4>
           <p>${this.description}</p>
           <p class="text-end text-success m-0">$<b>${this.price}</b></p>
           <button class="btn btn-danger" onclick="app.carsController.deleteCar('${this.id}')">delete me</button> 
